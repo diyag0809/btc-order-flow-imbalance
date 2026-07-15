@@ -163,6 +163,8 @@ Same approach, different speeds:
 - **Momentum Strategy Backtester** — S&P 500 equities, daily horizon
 
 ## Repository structure
+
+```
 01_load_data.py            initial load and row count check
 02_clean_data.py           timestamp fix, buy/sell labeling
 03_imbalance.py            first pass, 10-second buckets
@@ -175,6 +177,8 @@ horizon_sweep_results.csv  output of 07
 multi_day_results.csv      output of 08
 requirements.txt
 README.md
+```
+
 Raw trade CSVs aren't included (too large, and not really mine to redistribute).
 `08_multi_day.py` downloads them automatically on first run.
 
@@ -190,5 +194,7 @@ day.
 
 ## Requirements
 pandas
+
 scipy
+
 requests
