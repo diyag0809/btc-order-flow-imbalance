@@ -59,7 +59,7 @@ otherwise "5 seconds later" wouldn't reliably mean 5 real seconds later.
 
 ### 3. Measuring the forward return
 
-For a given horizon h (in seconds):
+For a given horizon h (in seconds): 
 Return(t, h) = (Price(t + h) - Price(t)) / Price(t)
 
 I tested this at 1, 2, 5, 10, 30, 60, and 120 second horizons.
@@ -76,7 +76,9 @@ I split each day into buy-heavy windows (imbalance above 0.3) and sell-heavy
 windows (imbalance below -0.3), then compared the average forward return between
 the two groups against a round-trip trading cost of 0.20% (a reasonable retail
 spot fee assumption):
+
 EdgeRatio(h) = [Avg Return, buy-heavy - Avg Return, sell-heavy] / 0.002
+
 An EdgeRatio at or above 1.0 would mean the average edge is big enough to cover
 trading costs. Below 1.0 means the signal is real but too small to act on
 profitably.
