@@ -61,6 +61,7 @@ otherwise "5 seconds later" wouldn't reliably mean 5 real seconds later.
 
 For a given horizon h (in seconds):
 Return(t, h) = (Price(t + h) - Price(t)) / Price(t)
+
 I tested this at 1, 2, 5, 10, 30, 60, and 120 second horizons.
 
 ### 4. Checking statistical significance
